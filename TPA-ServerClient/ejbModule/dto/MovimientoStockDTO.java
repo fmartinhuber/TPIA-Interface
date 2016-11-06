@@ -3,26 +3,17 @@ package dto;
 import java.io.Serializable;
 
 public class MovimientoStockDTO implements Serializable{
-
+	
+	private static final long serialVersionUID = 1L;
+	
 	private Integer idMovimientoStock;
 	private ArticuloDTO articulo;
-	private String tipoMovimiento; // Ingreso o Egreso del stock
+	private String tipoMovimiento; 
 	private Integer cantidad;
 	
+	// Constructor
 	
-	
-	public MovimientoStockDTO(ArticuloDTO articulo, String tipoMovimiento, Integer cantidad) {
-		super();
-		this.articulo = articulo;
-		this.tipoMovimiento = tipoMovimiento;
-		this.cantidad = cantidad;
-	}
-
-	public MovimientoStockDTO() {
-		super();
-	}
-	
-	
+	public MovimientoStockDTO() {}
 
 	public Integer getIdMovimientoStock() {
 		return idMovimientoStock;
@@ -57,3 +48,4 @@ public class MovimientoStockDTO implements Serializable{
 	}
 	
 }
+

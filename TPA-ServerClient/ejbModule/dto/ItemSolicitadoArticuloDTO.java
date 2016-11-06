@@ -3,30 +3,20 @@ package dto;
 import java.io.Serializable;
 import java.util.List;
 
-
 //Daro: Este Bean relaciona el articulo con la cantidad solicitada
 
 public class ItemSolicitadoArticuloDTO implements Serializable{
+		
+	private static final long serialVersionUID = 1L;
+	
 	private Integer idItemSolicitadoArticulo;
 	private ArticuloDTO articulo;
 	private SolicitudArticuloDTO solicitudArticulo;
 	private Integer cantidad;
 	
+	// Constructor
 	
-	
-	public ItemSolicitadoArticuloDTO(ArticuloDTO articulo, SolicitudArticuloDTO solicitudArticulo,
-			Integer cantidad) {
-		super();
-		this.articulo = articulo;
-		this.solicitudArticulo = solicitudArticulo;
-		this.cantidad = cantidad;
-	}
-
-	public ItemSolicitadoArticuloDTO() {
-		super();
-	}
-	
-	
+	public ItemSolicitadoArticuloDTO() {}
 
 	public Integer getIdItemSolicitadoArticulo() {
 		return idItemSolicitadoArticulo;
@@ -58,6 +48,6 @@ public class ItemSolicitadoArticuloDTO implements Serializable{
 
 	public void setCantidad(Integer cantidad) {
 		this.cantidad = cantidad;
-	}
-	
+	}	
+
 }

@@ -2,21 +2,17 @@ package dto;
 
 import java.io.Serializable;
 
-
 public class ItemRecepcionCompraDTO implements Serializable{
-
+	
+	private static final long serialVersionUID = 1L;
+	
 	private Integer idItemRecepcionCompra;
 	private ArticuloDTO articulo;
 	private Integer cantidad;
 	
-	public ItemRecepcionCompraDTO(ArticuloDTO articulo, Integer cantidad) {
-		this.articulo = articulo;
-		this.cantidad = cantidad;
-	}
+	// Constructor
 
-	public ItemRecepcionCompraDTO() {
-		
-	}
+	public ItemRecepcionCompraDTO() {}
 
 	public Integer getIdItemRecepcionCompra() {
 		return idItemRecepcionCompra;

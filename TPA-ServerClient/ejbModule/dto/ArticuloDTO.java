@@ -1,68 +1,56 @@
 package dto;
 
 import java.io.Serializable;
-
-
-/*	
- *	Daro: Todos los atributos de ArticuloBean fueron tomados del pdf de articulos en Web Campus
-	Rama: hay 4 tipos de articulo, se separará con el identificador "Tipo"
-	 
-*/
-
+import java.util.Date;
 
 public class ArticuloDTO implements Serializable{
 
-	private Integer idArticulo;
+	private static final long serialVersionUID = 1L;
+	
+	private Integer id;
+	private String idDeposito; 	
+	private Integer codArticulo;
 	private String nombre;
-	private String codigo;
-	private String descripcion;
+	private String descripcion;	
 	private String marca;
 	private float precio;
 	private String foto;
-	private String origen;
-
+	private String origen;	
 	private String tipo;
+	private Date fecha;	
+	private String edadRecomendada;
+	private String fichaTecnica;
+	private String color;
+	private String talle;
+	private String material;
+	private Integer cantidadDisponible;
+
+	// Constructor
 	
-	private static String grupo;
+	public ArticuloDTO() {}
 
-	// protected String fichaTecnica;
-	private Integer stockActual; // Atributo particular que manejamos por ser
-									// Deposito
-	private Integer stockSolicitado; /*
-										 * Este atributo es necesario para
-										 * posteriormente calcular la cantidad
-										 * de Articulos a pedir. Es el stock que
-										 * se desea tener en el deposito. Se
-										 * carga al momento del alta y queda
-										 * fijo
-										 */
-
-	public ArticuloDTO(String nombre, String codigo, String descripcion, String marca, float precio, String foto,
-			String origen, String tipo, Integer stockActual, Integer stockSolicitado) {
-		super();
-		this.nombre = nombre;
-		this.codigo = codigo;
-		this.descripcion = descripcion;
-		this.marca = marca;
-		this.precio = precio;
-		this.foto = foto;
-		this.origen = origen;
-		this.tipo = tipo;
-		// this.fichaTecnica = fichaTecnica;
-		this.stockActual = stockActual;
-		this.stockSolicitado = stockSolicitado;
+	public Integer getId() {
+		return id;
 	}
 
-	public ArticuloDTO() {
-
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
-	public Integer getIdArticulo() {
-		return idArticulo;
+	public String getIdDeposito() {
+		return idDeposito;
 	}
 
-	public void setIdArticulo(Integer idArticulo) {
-		this.idArticulo = idArticulo;
+	public void setIdDeposito(String idDeposito) {
+		this.idDeposito = idDeposito;
+	}
+
+	public Integer getCodArticulo() {
+		return codArticulo;
+	}
+
+	public void setCodArticulo(Integer codArticulo) {
+		this.codArticulo = codArticulo;
 	}
 
 	public String getNombre() {
@@ -71,14 +59,6 @@ public class ArticuloDTO implements Serializable{
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-	}
-
-	public String getCodigo() {
-		return codigo;
-	}
-
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
 	}
 
 	public String getDescripcion() {
@@ -129,29 +109,64 @@ public class ArticuloDTO implements Serializable{
 		this.tipo = tipo;
 	}
 
-	// public String getFichaTecnica() {
-	// return fichaTecnica;
-	// }
-	//
-	// public void setFichaTecnica(String fichaTecnica) {
-	// this.fichaTecnica = fichaTecnica;
-	// }
-
-	public Integer getStockActual() {
-		return stockActual;
+	public Date getFecha() {
+		return fecha;
 	}
 
-	public void setStockActual(Integer stockActual) {
-		this.stockActual = stockActual;
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
 	}
 
-	public Integer getStockSolicitado() {
-		return stockSolicitado;
+	public String getEdadRecomendada() {
+		return edadRecomendada;
 	}
 
-	public void setStockSolicitado(Integer stockSolicitado) {
-		this.stockSolicitado = stockSolicitado;
+	public void setEdadRecomendada(String edadRecomendada) {
+		this.edadRecomendada = edadRecomendada;
 	}
 
+	public String getFichaTecnica() {
+		return fichaTecnica;
+	}
+
+	public void setFichaTecnica(String fichaTecnica) {
+		this.fichaTecnica = fichaTecnica;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getTalle() {
+		return talle;
+	}
+
+	public void setTalle(String talle) {
+		this.talle = talle;
+	}
+
+	public String getMaterial() {
+		return material;
+	}
+
+	public void setMaterial(String material) {
+		this.material = material;
+	}
+
+	public Integer getCantidadDisponible() {
+		return cantidadDisponible;
+	}
+
+	public void setCantidadDisponible(Integer cantidadDisponible) {
+		this.cantidadDisponible = cantidadDisponible;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 
 }

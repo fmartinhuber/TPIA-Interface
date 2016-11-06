@@ -1,6 +1,6 @@
 package dto;
 
-public enum ETipoArticulo {
+public enum TipoArticulo {
 
 	Electrodomesticos,
 	Moda,

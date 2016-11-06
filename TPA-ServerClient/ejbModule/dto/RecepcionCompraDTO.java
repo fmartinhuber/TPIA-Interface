@@ -3,29 +3,18 @@ package dto;
 import java.io.Serializable;
 import java.util.List;
 
-
 public class RecepcionCompraDTO implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
 	private Integer idRecepcionCompra;
-	private String codigo; //Este atributo identifica univocamente al objeto, el id lo manejamos para nuestra base
-	private SolicitudCompraDTO solicitudCompra;
+	private Integer codigo;
 	private List<ItemRecepcionCompraDTO> recepcionesCompra;
 	
+	// Constructor
 	
-	
-	public RecepcionCompraDTO(String codigo, SolicitudCompraDTO solicitudCompra,
-			List<ItemRecepcionCompraDTO> recepcionesCompra) {
-		super();
-		this.codigo = codigo;
-		this.solicitudCompra = solicitudCompra;
-		this.recepcionesCompra = recepcionesCompra;
-	}
+	public RecepcionCompraDTO() {}
 
-	public RecepcionCompraDTO() {
-		super();
-	}
-
-	
-	
 	public Integer getIdRecepcionCompra() {
 		return idRecepcionCompra;
 	}
@@ -34,20 +23,12 @@ public class RecepcionCompraDTO implements Serializable{
 		this.idRecepcionCompra = idRecepcionCompra;
 	}
 
-	public String getCodigo() {
+	public Integer getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(String codigo) {
+	public void setCodigo(Integer codigo) {
 		this.codigo = codigo;
-	}
-
-	public SolicitudCompraDTO getSolicitudCompra() {
-		return solicitudCompra;
-	}
-
-	public void setSolicitudCompra(SolicitudCompraDTO solicitudCompra) {
-		this.solicitudCompra = solicitudCompra;
 	}
 
 	public List<ItemRecepcionCompraDTO> getRecepcionesCompra() {

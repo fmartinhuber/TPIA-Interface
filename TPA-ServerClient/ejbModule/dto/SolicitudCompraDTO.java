@@ -4,29 +4,21 @@ import java.io.Serializable;
 import java.util.*;
 
 public class SolicitudCompraDTO implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
 	private Integer idSolicitudCompra;
-	private String codigo; //Este atributo identifica univocamente al objeto, el id lo manejamos para nuestra base
+	private Integer codigo; 
 	private List<SolicitudArticuloDTO> solicitudesArticulos;
 	private List<ItemSolicitudCompraDTO> solicitudesCompra;
-	private Boolean pendiente; // (Recien enviada a fabrica = FALSE - Devuelta por fabrica = TRUE)
+	private RecepcionCompraDTO recepcionCompra;
+	private String pendiente;
+	private Date fechaCreacion;
 	
-	
-	
-	public SolicitudCompraDTO(String codigo, List<SolicitudArticuloDTO> solicitudesArticulos,
-			List<ItemSolicitudCompraDTO> solicitudesCompra, Boolean pendiente) {
-		super();
-		this.codigo = codigo;
-		this.solicitudesArticulos = solicitudesArticulos;
-		this.solicitudesCompra = solicitudesCompra;
-		this.pendiente = pendiente;
-	}
+	// Constructor
 
-	public SolicitudCompraDTO() {
-		super();
-	}
+	public SolicitudCompraDTO() {}
 
-	
-	
 	public Integer getIdSolicitudCompra() {
 		return idSolicitudCompra;
 	}
@@ -35,11 +27,11 @@ public class SolicitudCompraDTO implements Serializable{
 		this.idSolicitudCompra = idSolicitudCompra;
 	}
 
-	public String getCodigo() {
+	public Integer getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(String codigo) {
+	public void setCodigo(Integer codigo) {
 		this.codigo = codigo;
 	}
 
@@ -59,12 +51,28 @@ public class SolicitudCompraDTO implements Serializable{
 		this.solicitudesCompra = solicitudesCompra;
 	}
 
-	public Boolean getPendiente() {
+	public RecepcionCompraDTO getRecepcionCompra() {
+		return recepcionCompra;
+	}
+
+	public void setRecepcionCompra(RecepcionCompraDTO recepcionCompra) {
+		this.recepcionCompra = recepcionCompra;
+	}
+
+	public String getPendiente() {
 		return pendiente;
 	}
 
-	public void setPendiente(Boolean pendiente) {
+	public void setPendiente(String pendiente) {
 		this.pendiente = pendiente;
+	}
+
+	public Date getFechaCreacion() {
+		return fechaCreacion;
+	}
+
+	public void setFechaCreacion(Date fechaCreacion) {
+		this.fechaCreacion = fechaCreacion;
 	}
 	
 }

@@ -3,33 +3,24 @@ package dto;
 
 import java.io.Serializable;
 
-
 public class ItemSolicitudCompraDTO implements Serializable{
 
-	private Integer ItemSolicitudCompra;
-	private ArticuloDTO articulo;
+	private static final long serialVersionUID = 1L;
+	
+	private Integer idItemSolicitudCompra;
+	private ArticuloDTO articulo;	
 	private Integer cantidad;
 	
+	// Constructor
 	
-	
-	public ItemSolicitudCompraDTO(ArticuloDTO articulo, Integer cantidad) {
-		super();
-		this.articulo = articulo;
-		this.cantidad = cantidad;
+	public ItemSolicitudCompraDTO() {}
+
+	public Integer getIdItemSolicitudCompra() {
+		return idItemSolicitudCompra;
 	}
 
-	public ItemSolicitudCompraDTO() {
-		super();
-	}
-
-	
-	
-	public Integer getItemSolicitudCompra() {
-		return ItemSolicitudCompra;
-	}
-
-	public void setItemSolicitudCompra(Integer itemSolicitudCompra) {
-		ItemSolicitudCompra = itemSolicitudCompra;
+	public void setIdItemSolicitudCompra(Integer idItemSolicitudCompra) {
+		this.idItemSolicitudCompra = idItemSolicitudCompra;
 	}
 
 	public ArticuloDTO getArticulo() {
@@ -46,6 +37,6 @@ public class ItemSolicitudCompraDTO implements Serializable{
 
 	public void setCantidad(Integer cantidad) {
 		this.cantidad = cantidad;
-	}	
+	}
 	
 }
