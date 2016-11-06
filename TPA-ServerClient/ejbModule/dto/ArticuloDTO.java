@@ -28,9 +28,25 @@ public class ArticuloDTO implements Serializable{
 	// Constructor
 	
 	public ArticuloDTO() {}
+	
+	public ArticuloDTO(Integer id,String nombre, Integer codigo, String color) {
+		this.id = id;
+		this.nombre = nombre;
+		this.codArticulo = codigo;
+		this.color = color;
+	}
 
 	public Integer getId() {
 		return id;
+	}
+
+	@Override
+	public String toString() {
+		return "ArticuloDTO [id=" + id + ", idDeposito=" + idDeposito + ", codArticulo=" + codArticulo + ", nombre="
+				+ nombre + ", descripcion=" + descripcion + ", marca=" + marca + ", precio=" + precio + ", foto=" + foto
+				+ ", origen=" + origen + ", tipo=" + tipo + ", fecha=" + fecha + ", edadRecomendada=" + edadRecomendada
+				+ ", fichaTecnica=" + fichaTecnica + ", color=" + color + ", talle=" + talle + ", material=" + material
+				+ ", cantidadDisponible=" + cantidadDisponible + "]";
 	}
 
 	public void setId(Integer id) {
