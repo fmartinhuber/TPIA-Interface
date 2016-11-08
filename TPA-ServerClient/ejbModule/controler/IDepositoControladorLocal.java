@@ -37,8 +37,8 @@ public interface IDepositoControladorLocal {
 	 *   Se podrá seleccionar todos o algunos artículos para la Solicitud de Compra.
 	 * @return
 	 */
-	public ArticuloDTO obtenerArticulosPendientes();
 	
+	public List<SolicitudArticuloDTO> obtenerSolicitudArticuloPendiente();
 	/**
 	 * Se recibe de forma asincrónica la compra enviada por la Fábrica a partir de las Solicitudes de Compras. 
 		Se debe registrar la Recepción de la Compra.

@@ -25,12 +25,13 @@ public class SolicitudArticuloDTO implements Serializable{
 		this.codigo = codigo;
 	}
 
-	public SolicitudArticuloDTO(Integer codigo, String estado, Date fechaEntrega, Integer idModulo) {
+	public SolicitudArticuloDTO(Integer codigo, String estado, Date fechaEntrega, Integer idModulo, List<ItemSolicitudArticuloDTO> itemsSolicitudArticulo) {
 		super();
 		this.codigo = codigo;
 		this.estado = estado;
 		this.fechaEntrega = fechaEntrega;
 		this.idModulo = idModulo;
+		this.itemsSolicitudArticulo = itemsSolicitudArticulo;
 	}
 	
 	
