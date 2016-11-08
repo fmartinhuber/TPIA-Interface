@@ -52,4 +52,10 @@ public interface IDepositoControladorRemote {
 	public ArticuloDTO buscarArticuloPorCodigo(Integer codArticulo);
 	
 	public ArticuloDTO buscarArticuloPorNombre(String nombre);
+	
+
+	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
+	
+
+	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
 }

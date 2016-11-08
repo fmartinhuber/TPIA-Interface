@@ -60,4 +60,10 @@ public interface IDepositoControladorLocal {
 	public ArticuloDTO buscarArticuloPorNombre(String nombre);
 	
 	
+	
+
+	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
+	
+
+	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
 }
