@@ -2,6 +2,8 @@ package dto;
 
 import java.io.Serializable;
 import java.util.*;
+import java.util.stream.Collector;
+
 
 public class SolicitudArticuloDTO implements Serializable{
 	
@@ -11,6 +13,8 @@ public class SolicitudArticuloDTO implements Serializable{
 	private String estado; 
 	private Date fechaEntrega;
 	private Integer idModulo;
+	private List<ItemSolicitudArticuloDTO> itemsSolicitudArticulo;
+	
 	
 	// Constructor
 
@@ -28,6 +32,8 @@ public class SolicitudArticuloDTO implements Serializable{
 		this.fechaEntrega = fechaEntrega;
 		this.idModulo = idModulo;
 	}
+	
+	
 
 	public Integer getCodigo() {
 		return codigo;
@@ -60,5 +66,13 @@ public class SolicitudArticuloDTO implements Serializable{
 	public void setIdModulo(Integer idModulo) {
 		this.idModulo = idModulo;
 	}
-	
+
+	public List<ItemSolicitudArticuloDTO> getItemsSolicitudArticulo() {
+		return itemsSolicitudArticulo;
+	}
+
+	public void setItemsSolicitudArticulo(List<ItemSolicitudArticuloDTO> itemsSolicitudArticulo) {
+		this.itemsSolicitudArticulo = itemsSolicitudArticulo;
+	}
+
 }
