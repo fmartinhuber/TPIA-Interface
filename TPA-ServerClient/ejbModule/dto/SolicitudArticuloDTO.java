@@ -7,7 +7,6 @@ public class SolicitudArticuloDTO implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
-	private Integer idSolicitudArticulo;	
 	private Integer codigo; 
 	private String estado; 
 	private Date fechaEntrega;
@@ -17,12 +16,17 @@ public class SolicitudArticuloDTO implements Serializable{
 
 	public SolicitudArticuloDTO() {}
 
-	public Integer getIdSolicitudArticulo() {
-		return idSolicitudArticulo;
+	public SolicitudArticuloDTO(Integer codigo) {
+		super();
+		this.codigo = codigo;
 	}
 
-	public void setIdSolicitudArticulo(Integer idSolicitudArticulo) {
-		this.idSolicitudArticulo = idSolicitudArticulo;
+	public SolicitudArticuloDTO(Integer codigo, String estado, Date fechaEntrega, Integer idModulo) {
+		super();
+		this.codigo = codigo;
+		this.estado = estado;
+		this.fechaEntrega = fechaEntrega;
+		this.idModulo = idModulo;
 	}
 
 	public Integer getCodigo() {

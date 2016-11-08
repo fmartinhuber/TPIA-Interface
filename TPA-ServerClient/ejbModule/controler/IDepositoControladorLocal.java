@@ -18,7 +18,7 @@ public interface IDepositoControladorLocal {
 	
 	public void modificarArticulo(ArticuloDTO articulo);
 	
-	public ArrayList<ArticuloDTO> listarArticulos();
+	public List<ArticuloDTO> listarArticulos();
 	
 	/**
 	 * se debe listar las Solicitud de Productos pendientes. Se debe mostrar los detalles de los productos, el stock actual
@@ -53,5 +53,11 @@ public interface IDepositoControladorLocal {
 	 * ordenadas por fecha ascendientes (las más viejas primero).
 	 * @return
 	 */
-	public List <SolicitudCompraDTO> solicitudesPendientes();
+	public List <SolicitudArticuloDTO> solicitudesPendientes();
+	
+	public ArticuloDTO buscarArticuloPorCodigo(Integer codArticulo);
+	
+	public ArticuloDTO buscarArticuloPorNombre(String nombre);
+	
+	
 }

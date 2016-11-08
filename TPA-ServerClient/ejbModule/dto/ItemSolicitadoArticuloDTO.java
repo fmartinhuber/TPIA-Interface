@@ -9,7 +9,6 @@ public class ItemSolicitadoArticuloDTO implements Serializable{
 		
 	private static final long serialVersionUID = 1L;
 	
-	private Integer idItemSolicitadoArticulo;
 	private ArticuloDTO articulo;
 	private SolicitudArticuloDTO solicitudArticulo;
 	private Integer cantidad;
@@ -17,14 +16,6 @@ public class ItemSolicitadoArticuloDTO implements Serializable{
 	// Constructor
 	
 	public ItemSolicitadoArticuloDTO() {}
-
-	public Integer getIdItemSolicitadoArticulo() {
-		return idItemSolicitadoArticulo;
-	}
-
-	public void setIdItemSolicitadoArticulo(Integer idItemSolicitadoArticulo) {
-		this.idItemSolicitadoArticulo = idItemSolicitadoArticulo;
-	}
 
 	public ArticuloDTO getArticulo() {
 		return articulo;

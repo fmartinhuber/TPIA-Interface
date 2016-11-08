@@ -7,21 +7,12 @@ public class RecepcionCompraDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	private Integer idRecepcionCompra;
 	private Integer codigo;
 	private List<ItemRecepcionCompraDTO> recepcionesCompra;
 	
 	// Constructor
 	
 	public RecepcionCompraDTO() {}
-
-	public Integer getIdRecepcionCompra() {
-		return idRecepcionCompra;
-	}
-
-	public void setIdRecepcionCompra(Integer idRecepcionCompra) {
-		this.idRecepcionCompra = idRecepcionCompra;
-	}
 
 	public Integer getCodigo() {
 		return codigo;

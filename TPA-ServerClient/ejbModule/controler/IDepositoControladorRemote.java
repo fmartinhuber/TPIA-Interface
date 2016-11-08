@@ -5,9 +5,7 @@ import java.util.List;
 
 import javax.ejb.Remote;
 
-import dto.ArticuloDTO;
-import dto.RecepcionCompraDTO;
-import dto.SolicitudCompraDTO;
+import dto.*;
 
 @Remote
 public interface IDepositoControladorRemote {
@@ -16,7 +14,7 @@ public interface IDepositoControladorRemote {
 	
 	public void modificarArticulo(ArticuloDTO articulo);
 	
-	public ArrayList<ArticuloDTO> listarArticulos();
+	public List<ArticuloDTO> listarArticulos();
 	
 	/**
 	 * se debe listar las Solicitud de Productos pendientes. Se debe mostrar los detalles de los productos, el stock actual
@@ -49,5 +47,9 @@ public interface IDepositoControladorRemote {
 	 * ordenadas por fecha ascendientes (las más viejas primero).
 	 * @return
 	 */
-	public List <SolicitudCompraDTO> solicitudesPendientes();
+	public List <SolicitudArticuloDTO> solicitudesPendientes();
+	
+	public ArticuloDTO buscarArticuloPorCodigo(Integer codArticulo);
+	
+	public ArticuloDTO buscarArticuloPorNombre(String nombre);
 }

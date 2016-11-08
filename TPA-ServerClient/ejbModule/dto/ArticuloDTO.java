@@ -7,13 +7,12 @@ public class ArticuloDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	private Integer id;
 	private String idDeposito; 	
 	private Integer codArticulo;
 	private String nombre;
 	private String descripcion;	
 	private String marca;
-	private float precio;
+	private Float precio;
 	private String foto;
 	private String origen;	
 	private String tipo;
@@ -25,32 +24,30 @@ public class ArticuloDTO implements Serializable{
 	private String material;
 	private Integer cantidadDisponible;
 
-	// Constructor
+	// Constructor 
 	
 	public ArticuloDTO() {}
 	
-	public ArticuloDTO(Integer id,String nombre, Integer codigo, String color) {
-		this.id = id;
+	public ArticuloDTO(String idDeposito, Integer codArticulo, String nombre, String descripcion, String marca,
+			Float precio, String foto, String origen, String tipo, Date fecha, String edadRecomendada,
+			String fichaTecnica, String color, String talle, String material, Integer cantidadDisponible) {
+		super();
+		this.idDeposito = idDeposito;
+		this.codArticulo = codArticulo;
 		this.nombre = nombre;
-		this.codArticulo = codigo;
+		this.descripcion = descripcion;
+		this.marca = marca;
+		this.precio = precio;
+		this.foto = foto;
+		this.origen = origen;
+		this.tipo = tipo;
+		this.fecha = fecha;
+		this.edadRecomendada = edadRecomendada;
+		this.fichaTecnica = fichaTecnica;
 		this.color = color;
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	@Override
-	public String toString() {
-		return "ArticuloDTO [id=" + id + ", idDeposito=" + idDeposito + ", codArticulo=" + codArticulo + ", nombre="
-				+ nombre + ", descripcion=" + descripcion + ", marca=" + marca + ", precio=" + precio + ", foto=" + foto
-				+ ", origen=" + origen + ", tipo=" + tipo + ", fecha=" + fecha + ", edadRecomendada=" + edadRecomendada
-				+ ", fichaTecnica=" + fichaTecnica + ", color=" + color + ", talle=" + talle + ", material=" + material
-				+ ", cantidadDisponible=" + cantidadDisponible + "]";
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
+		this.talle = talle;
+		this.material = material;
+		this.cantidadDisponible = cantidadDisponible;
 	}
 
 	public String getIdDeposito() {
@@ -93,11 +90,11 @@ public class ArticuloDTO implements Serializable{
 		this.marca = marca;
 	}
 
-	public float getPrecio() {
+	public Float getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(float precio) {
+	public void setPrecio(Float precio) {
 		this.precio = precio;
 	}
 

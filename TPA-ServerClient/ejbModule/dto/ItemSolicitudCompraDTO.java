@@ -7,21 +7,12 @@ public class ItemSolicitudCompraDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	private Integer idItemSolicitudCompra;
 	private ArticuloDTO articulo;	
 	private Integer cantidad;
 	
 	// Constructor
 	
 	public ItemSolicitudCompraDTO() {}
-
-	public Integer getIdItemSolicitudCompra() {
-		return idItemSolicitudCompra;
-	}
-
-	public void setIdItemSolicitudCompra(Integer idItemSolicitudCompra) {
-		this.idItemSolicitudCompra = idItemSolicitudCompra;
-	}
 
 	public ArticuloDTO getArticulo() {
 		return articulo;

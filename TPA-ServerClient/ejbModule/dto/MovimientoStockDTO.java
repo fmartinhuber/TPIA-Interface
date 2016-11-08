@@ -6,7 +6,6 @@ public class MovimientoStockDTO implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
-	private Integer idMovimientoStock;
 	private ArticuloDTO articulo;
 	private String tipoMovimiento; 
 	private Integer cantidad;
@@ -14,14 +13,6 @@ public class MovimientoStockDTO implements Serializable{
 	// Constructor
 	
 	public MovimientoStockDTO() {}
-
-	public Integer getIdMovimientoStock() {
-		return idMovimientoStock;
-	}
-
-	public void setIdMovimientoStock(Integer idMovimientoStock) {
-		this.idMovimientoStock = idMovimientoStock;
-	}
 
 	public ArticuloDTO getArticulo() {
 		return articulo;
