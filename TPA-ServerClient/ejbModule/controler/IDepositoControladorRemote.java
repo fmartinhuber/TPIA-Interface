@@ -50,4 +50,6 @@ public interface IDepositoControladorRemote {
 	 * @return
 	 */
 	public List <SolicitudCompraDTO> solicitudesPendientes();
+	
+	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
 }

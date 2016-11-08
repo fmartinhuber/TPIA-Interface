@@ -10,7 +10,7 @@ public class SolicitudCompraDTO implements Serializable{
 	private Integer idSolicitudCompra;
 	private Integer codigo; 
 	private List<SolicitudArticuloDTO> solicitudesArticulos;
-	private List<ItemSolicitudCompraDTO> solicitudesCompra;
+	private List<ItemSolicitudCompraDTO> itemSolicitudesCompra;
 	private RecepcionCompraDTO recepcionCompra;
 	private String pendiente;
 	private Date fechaCreacion;
@@ -43,12 +43,12 @@ public class SolicitudCompraDTO implements Serializable{
 		this.solicitudesArticulos = solicitudesArticulos;
 	}
 
-	public List<ItemSolicitudCompraDTO> getSolicitudesCompra() {
-		return solicitudesCompra;
+	public List<ItemSolicitudCompraDTO> getItemsSolicitudesCompra() {
+		return itemSolicitudesCompra;
 	}
 
-	public void setSolicitudesCompra(List<ItemSolicitudCompraDTO> solicitudesCompra) {
-		this.solicitudesCompra = solicitudesCompra;
+	public void setItemsSolicitudesCompra(List<ItemSolicitudCompraDTO> solicitudesCompra) {
+		this.itemSolicitudesCompra = solicitudesCompra;
 	}
 
 	public RecepcionCompraDTO getRecepcionCompra() {
