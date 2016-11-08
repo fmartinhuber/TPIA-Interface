@@ -56,4 +56,6 @@ public interface IDepositoControladorLocal {
 	public List <SolicitudCompraDTO> solicitudesPendientes();
 	
 	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
+	
+	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
 }
