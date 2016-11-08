@@ -54,4 +54,6 @@ public interface IDepositoControladorLocal {
 	 * @return
 	 */
 	public List <SolicitudCompraDTO> solicitudesPendientes();
+	
+	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
 }

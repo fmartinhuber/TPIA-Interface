@@ -7,6 +7,7 @@ import javax.ejb.Remote;
 
 import dto.ArticuloDTO;
 import dto.RecepcionCompraDTO;
+import dto.SolicitudArticuloDTO;
 import dto.SolicitudCompraDTO;
 
 @Remote
@@ -50,4 +51,6 @@ public interface IDepositoControladorRemote {
 	 * @return
 	 */
 	public List <SolicitudCompraDTO> solicitudesPendientes();
+	
+	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
 }
