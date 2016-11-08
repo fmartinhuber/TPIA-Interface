@@ -52,7 +52,9 @@ public interface IDepositoControladorRemote {
 	 */
 	public List <SolicitudCompraDTO> solicitudesPendientes();
 	
+
 	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
 	
+
 	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
 }
