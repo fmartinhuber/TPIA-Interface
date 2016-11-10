@@ -50,14 +50,6 @@ public interface IDepositoControladorLocal {
 	public void registrarRecepcionCompra(RecepcionCompraDTO compraDTO);
 	
 	
-	/**
-	 * Mediante una interfaz Web, el usuario podrá ver las Solicitudes de Artículos no cumplidas o pendientes, 
-	 * ordenadas por fecha ascendientes (las más viejas primero).
-	 * @return
-	 */
-	public List <SolicitudArticuloDTO> listarSolicitudesPendientes();
-		
-	
 	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
 	
 
