@@ -14,7 +14,7 @@ public interface IDepositoControladorRemote {
 	
 	public void modificarArticulo(ArticuloDTO articulo);
 	
-	public List<ArticuloDTO> listarArticulos();
+	//public List<ArticuloDTO> listarArticulos();
 	
 	/**
 	 * se debe listar las Solicitud de Productos pendientes. Se debe mostrar los detalles de los productos, el stock actual
@@ -49,9 +49,9 @@ public interface IDepositoControladorRemote {
 	 */
 	public List <SolicitudArticuloDTO> solicitudesPendientes();
 	
-	public ArticuloDTO buscarArticuloPorCodigo(Integer codArticulo);
+	//public ArticuloDTO buscarArticuloPorCodigo(Integer codArticulo);
 	
-	public ArticuloDTO buscarArticuloPorNombre(String nombre);
+	//public ArticuloDTO buscarArticuloPorNombre(String nombre);
 	
 
 	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
