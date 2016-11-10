@@ -1,7 +1,6 @@
 package controler;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 import javax.ejb.Remote;
 
@@ -10,13 +9,11 @@ import dto.*;
 @Remote
 public interface IDepositoControladorRemote {
 
-	public void crearArticulo(ArticuloDTO articulo);
+	public void crearArticulo(ArticuloDTO articuloDTO);
 	
-	public void modificarArticulo(ArticuloDTO articulo);
+	public void modificarArticulo(ArticuloDTO articuloDTO);
 	
-	public void modificarStockDelArticulo(ArticuloDTO articulo);
-	
-	//public List<ArticuloDTO> listarArticulos();
+	public void modificarStockDelArticulo(ArticuloDTO articuloDTO);
 	
 	/**
 	 * se debe listar las Solicitud de Productos pendientes. Se debe mostrar los detalles de los productos, el stock actual
@@ -34,7 +31,7 @@ public interface IDepositoControladorRemote {
 	 *   Se podrá seleccionar todos o algunos artículos para la Solicitud de Compra.
 	 * @return
 	 */
-	public List<SolicitudArticuloDTO> obtenerSolicitudArticuloPendiente();
+	public List<SolicitudArticuloDTO> listarSolicitudArticuloPendiente();
 	
 	/**
 	 * Se recibe de forma asincrónica la compra enviada por la Fábrica a partir de las Solicitudes de Compras. 
@@ -42,22 +39,27 @@ public interface IDepositoControladorRemote {
 		Se debe actualizar el stock de artículos.
 	 * @param compraDTO
 	 */
-	public void recepcionCompra(RecepcionCompraDTO compraDTO);
+	public void registrarRecepcionCompra(RecepcionCompraDTO compraDTO);
 	
 	/**
 	 * Mediante una interfaz Web, el usuario podrá ver las Solicitudes de Artículos no cumplidas o pendientes, 
 	 * ordenadas por fecha ascendientes (las más viejas primero).
 	 * @return
 	 */
-	public List <SolicitudArticuloDTO> solicitudesPendientes();
-	
-	//public ArticuloDTO buscarArticuloPorCodigo(Integer codArticulo);
-	
-	//public ArticuloDTO buscarArticuloPorNombre(String nombre);
+	public List <SolicitudArticuloDTO> listarSolicitudesPendientes();
 	
 
 	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
 	
 
 	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
+	
+	
+	//public ArticuloDTO buscarArticuloPorCodigo(Integer codArticulo);
+	
+	
+	//public ArticuloDTO buscarArticuloPorNombre(String nombre);
+	
+	
+	//public List<ArticuloDTO> listarArticulos();
 }
