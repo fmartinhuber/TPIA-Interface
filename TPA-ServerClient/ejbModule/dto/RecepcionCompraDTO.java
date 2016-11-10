@@ -9,6 +9,7 @@ public class RecepcionCompraDTO implements Serializable{
 	
 	private Integer codigo;
 	private List<ItemRecepcionCompraDTO> recepcionesCompra;
+	private List<SolicitudCompraDTO> solicitudesCompra;
 	
 	// Constructor
 	
@@ -28,6 +29,14 @@ public class RecepcionCompraDTO implements Serializable{
 
 	public void setRecepcionesCompra(List<ItemRecepcionCompraDTO> recepcionesCompra) {
 		this.recepcionesCompra = recepcionesCompra;
+	}
+
+	public List<SolicitudCompraDTO> getSolicitudesCompra() {
+		return solicitudesCompra;
+	}
+
+	public void setSolicitudesCompra(List<SolicitudCompraDTO> solicitudesCompra) {
+		this.solicitudesCompra = solicitudesCompra;
 	}
 
 }
