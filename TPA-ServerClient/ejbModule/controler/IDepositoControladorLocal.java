@@ -18,6 +18,8 @@ public interface IDepositoControladorLocal {
 	
 	public void modificarArticulo(ArticuloDTO articulo);
 	
+	public void modificarStockDelArticulo(ArticuloDTO articulo);
+	
 	//public List<ArticuloDTO> listarArticulos();
 	
 	/**
