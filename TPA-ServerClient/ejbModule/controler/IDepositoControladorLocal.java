@@ -64,11 +64,11 @@ public interface IDepositoControladorLocal {
 	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
 	
 	
-	//public List<ArticuloDTO> listarArticulos();
-	
-	
-	//public ArticuloDTO buscarArticuloPorCodigo(Integer codArticulo);
-	
-	
-	//public ArticuloDTO buscarArticuloPorNombre(String nombre);
+//	public List<ArticuloDTO> listarArticulos();
+//	
+//	
+//	public ArticuloDTO buscarArticuloPorCodigo(Integer codArticulo);
+//	
+//	
+//	public ArticuloDTO buscarArticuloPorNombre(String nombre);
 }
