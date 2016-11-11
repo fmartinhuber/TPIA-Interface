@@ -7,22 +7,24 @@ public class SolicitudCompraDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	private Integer codigo; 
+	private String codigo; 
 	private List<SolicitudArticuloDTO> solicitudesArticulos;
 	private List<ItemSolicitudCompraDTO> itemSolicitudesCompra;
 	private RecepcionCompraDTO recepcionCompra;
 	private String pendiente;
 	private Date fechaCreacion;
 	
-	// Constructor
+	
 
 	public SolicitudCompraDTO() {}
 
-	public Integer getCodigo() {
+	
+	
+	public String getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(Integer codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 

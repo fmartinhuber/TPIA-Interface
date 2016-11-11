@@ -8,7 +8,7 @@ public class ArticuloDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private String idDeposito; 	
-	private Integer codArticulo;
+	private String codArticulo;
 	private String nombre;
 	private String descripcion;	
 	private String marca;
@@ -24,11 +24,11 @@ public class ArticuloDTO implements Serializable{
 	private String material;
 	private Integer cantidadDisponible;
 
-	// Constructor 
+	
 	
 	public ArticuloDTO() {}
 	
-	public ArticuloDTO(String idDeposito, Integer codArticulo, String nombre, String descripcion, String marca,
+	public ArticuloDTO(String idDeposito, String codArticulo, String nombre, String descripcion, String marca,
 			Float precio, String foto, String origen, String tipo, Date fecha, String edadRecomendada,
 			String fichaTecnica, String color, String talle, String material, Integer cantidadDisponible) {
 		super();
@@ -50,6 +50,8 @@ public class ArticuloDTO implements Serializable{
 		this.cantidadDisponible = cantidadDisponible;
 	}
 
+	
+	
 	public String getIdDeposito() {
 		return idDeposito;
 	}
@@ -58,11 +60,11 @@ public class ArticuloDTO implements Serializable{
 		this.idDeposito = idDeposito;
 	}
 
-	public Integer getCodArticulo() {
+	public String getCodArticulo() {
 		return codArticulo;
 	}
 
-	public void setCodArticulo(Integer codArticulo) {
+	public void setCodArticulo(String codArticulo) {
 		this.codArticulo = codArticulo;
 	}
 

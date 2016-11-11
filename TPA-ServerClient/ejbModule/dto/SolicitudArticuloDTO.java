@@ -9,7 +9,7 @@ public class SolicitudArticuloDTO implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
-	private Integer codigo; 
+	private String codigo; 
 	private String estado; 
 	private Date fechaEntrega;
 	private Integer idModulo;
@@ -20,12 +20,7 @@ public class SolicitudArticuloDTO implements Serializable{
 
 	public SolicitudArticuloDTO() {}
 
-	public SolicitudArticuloDTO(Integer codigo) {
-		super();
-		this.codigo = codigo;
-	}
-
-	public SolicitudArticuloDTO(Integer codigo, String estado, Date fechaEntrega, Integer idModulo, List<ItemSolicitudArticuloDTO> itemsSolicitudArticulo) {
+	public SolicitudArticuloDTO(String codigo, String estado, Date fechaEntrega, Integer idModulo, List<ItemSolicitudArticuloDTO> itemsSolicitudArticulo) {
 		super();
 		this.codigo = codigo;
 		this.estado = estado;
@@ -36,11 +31,11 @@ public class SolicitudArticuloDTO implements Serializable{
 	
 	
 
-	public Integer getCodigo() {
+	public String getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(Integer codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 
