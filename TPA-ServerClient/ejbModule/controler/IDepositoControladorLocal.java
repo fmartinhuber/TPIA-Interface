@@ -41,13 +41,6 @@ public interface IDepositoControladorLocal {
 	 */
 	
 	public List<SolicitudArticuloDTO> listarSolicitudArticuloPendiente();
-	/**
-	 * Se recibe de forma asincrónica la compra enviada por la Fábrica a partir de las Solicitudes de Compras. 
-		Se debe registrar la Recepción de la Compra.
-		Se debe actualizar el stock de artículos.
-	 * @param compraDTO
-	 */
-	public void registrarRecepcionCompra(RecepcionCompraDTO compraDTO);
 	
 	
 	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
@@ -56,11 +49,22 @@ public interface IDepositoControladorLocal {
 	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
 	
 	
+	public ArticuloDTO obtenerArticuloPorCodigo(String codArticulo);
+	
+	
+	
 //	public List<ArticuloDTO> listarArticulos();
 //	
 //	
-//	public ArticuloDTO buscarArticuloPorCodigo(Integer codArticulo);
-//	
 //	
 //	public ArticuloDTO buscarArticuloPorNombre(String nombre);
+	
+	
+//	/**
+//	 * Se recibe de forma asincrónica la compra enviada por la Fábrica a partir de las Solicitudes de Compras. 
+//		Se debe registrar la Recepción de la Compra.
+//		Se debe actualizar el stock de artículos.
+//	 * @param compraDTO
+//	 */
+//	public void registrarRecepcionCompra(RecepcionCompraDTO compraDTO);
 }
