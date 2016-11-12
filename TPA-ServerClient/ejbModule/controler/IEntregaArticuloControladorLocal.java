@@ -5,6 +5,7 @@ import java.util.List;
 import javax.ejb.Local;
 
 import dto.ArticuloDTO;
+import dto.ItemSolicitudArticuloDTO;
 import dto.SolicitudArticuloDTO;
 
 @Local
@@ -17,5 +18,5 @@ public interface IEntregaArticuloControladorLocal {
 	 */
 	public List <SolicitudArticuloDTO> listarSolicitudesPendientes();
 
-	public List<ArticuloDTO> obtenerArticulosDeSolicitud(String solicitudABuscar);
+	public List<ItemSolicitudArticuloDTO> obtenerItemDeSolicitud(String solicitudABuscar);
 }
