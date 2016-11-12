@@ -19,4 +19,8 @@ public interface IEntregaArticuloControladorLocal {
 	public List <SolicitudArticuloDTO> listarSolicitudesPendientes();
 
 	public List<ItemSolicitudArticuloDTO> obtenerItemDeSolicitud(String solicitudABuscar);
+
+	public SolicitudArticuloDTO obtenerSolicitudArticuloPorCodigo(String solicitudABuscar);
+
+	public void actualizarSolicitudArticulo(String solicitudABuscar, String articuloBuscado, Integer nuevaCant);
 }
