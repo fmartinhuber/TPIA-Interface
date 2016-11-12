@@ -22,4 +22,6 @@ public interface IEntregaArticuloControladorLocal {
 	public void actualizarEstadoSolicitud(String solicitudABuscar);
 
 	public SolicitudArticuloDTO enviarJSON(String solicitudABuscar);
+	
+	public void generarSolicitudCompra(List<String> elementos);
 }
