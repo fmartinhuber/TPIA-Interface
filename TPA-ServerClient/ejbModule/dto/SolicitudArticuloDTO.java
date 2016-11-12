@@ -14,7 +14,6 @@ public class SolicitudArticuloDTO implements Serializable{
 	private String idDespacho;
 	private List<ItemSolicitudArticuloDTO> itemsSolicitudArticulo;
 	
-	
 	// Constructor
 
 	public SolicitudArticuloDTO() {}
