@@ -21,4 +21,8 @@ public interface IEntregaArticuloControladorLocal {
 	public List<ItemSolicitudArticuloDTO> obtenerItemDeSolicitud(String solicitudABuscar);
 
 	public void actualizarSolicitudArticulo(String solicitudABuscar, String articuloBuscado, Integer nuevaCant);
+
+	public void decrementarStock(String solicitudABuscar);
+
+	public void actualizarEstadoSolicitud(String solicitudABuscar);
 }
