@@ -1,9 +1,6 @@
 package dto;
 
 import java.io.Serializable;
-import java.util.List;
-
-//Daro: Este Bean relaciona el articulo con la cantidad solicitada
 
 public class ItemSolicitudArticuloDTO implements Serializable{
 		

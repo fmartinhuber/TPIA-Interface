@@ -2,7 +2,6 @@ package dto;
 
 import java.io.Serializable;
 import java.util.*;
-import java.util.stream.Collector;
 
 
 public class SolicitudArticuloDTO implements Serializable{
@@ -12,7 +11,7 @@ public class SolicitudArticuloDTO implements Serializable{
 	private String codigo; 
 	private String estado; 
 	private Date fechaEntrega;
-	private Integer idModulo;
+	private String idDespacho;
 	private List<ItemSolicitudArticuloDTO> itemsSolicitudArticulo;
 	
 	
@@ -20,12 +19,12 @@ public class SolicitudArticuloDTO implements Serializable{
 
 	public SolicitudArticuloDTO() {}
 
-	public SolicitudArticuloDTO(String codigo, String estado, Date fechaEntrega, Integer idModulo, List<ItemSolicitudArticuloDTO> itemsSolicitudArticulo) {
+	public SolicitudArticuloDTO(String codigo, String estado, Date fechaEntrega, String idDespacho, List<ItemSolicitudArticuloDTO> itemsSolicitudArticulo) {
 		super();
 		this.codigo = codigo;
 		this.estado = estado;
 		this.fechaEntrega = fechaEntrega;
-		this.idModulo = idModulo;
+		this.idDespacho = idDespacho;
 		this.itemsSolicitudArticulo = itemsSolicitudArticulo;
 	}
 	
@@ -55,12 +54,12 @@ public class SolicitudArticuloDTO implements Serializable{
 		this.fechaEntrega = fechaEntrega;
 	}
 
-	public Integer getIdModulo() {
-		return idModulo;
+	public String getIdDespacho() {
+		return idDespacho;
 	}
 
-	public void setIdModulo(Integer idModulo) {
-		this.idModulo = idModulo;
+	public void setIdModulo(String idDespacho) {
+		this.idDespacho = idDespacho;
 	}
 
 	public List<ItemSolicitudArticuloDTO> getItemsSolicitudArticulo() {
