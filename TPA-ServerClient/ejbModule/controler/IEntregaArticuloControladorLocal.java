@@ -7,6 +7,7 @@ import javax.ejb.Local;
 import dto.ArticuloDTO;
 import dto.ItemSolicitudArticuloDTO;
 import dto.SolicitudArticuloDTO;
+import dto.SolicitudCompraDTO;
 
 @Local
 public interface IEntregaArticuloControladorLocal {
@@ -30,5 +31,5 @@ public interface IEntregaArticuloControladorLocal {
 	public SolicitudArticuloDTO obtenerSolicitudAEnviarADespacho(String solicitudABuscar);
 	
 	//SOLICITUD DE COMPRA: Paso un Array con formato "CodigoSolicitud;CodigoArticulo;Cantidad" para que se genere la Solicitud de Compra
-	public void generarSolicitudCompra(List<String> elementos);
+	public SolicitudCompraDTO generarSolicitudCompra(List<String> elementos);
 }
