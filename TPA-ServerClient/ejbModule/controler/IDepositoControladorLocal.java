@@ -50,6 +50,9 @@ public interface IDepositoControladorLocal {
 	
 	
 	public ArticuloDTO obtenerArticuloPorCodigo(String codArticulo);
+
+
+	public void actualizarEstadoSolicitudCompra(SolicitudCompraDTO solCompraDTO);
 	
 	
 	
