@@ -53,7 +53,7 @@ public interface IDepositoControladorLocal {
 
 
 	public void actualizarEstadoSolicitudCompra(SolicitudCompraDTO solCompraDTO);
-	
+
 	
 	
 //	public List<ArticuloDTO> listarArticulos();
