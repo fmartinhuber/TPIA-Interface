@@ -34,11 +34,11 @@ public interface IDepositoControladorRemote {
 	public List<SolicitudArticuloDTO> listarSolicitudArticuloPendiente();
 	
 	
+	public void crearSolicitudArticulo(String messageText);
+	
+	
 	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
-	
 
-	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
-	
 	
 	public ArticuloDTO obtenerArticuloPorCodigo(String codArticulo);
 	

@@ -45,8 +45,8 @@ public interface IDepositoControladorLocal {
 	
 	public void crearRecepcionCompra(SolicitudCompraDTO solicitudCompraDTO);
 	
-
-	public void crearSolicitudArticulo(SolicitudArticuloDTO solicitudArticuloDTO);
+	
+	public void crearSolicitudArticulo(String messageText);
 	
 	
 	public ArticuloDTO obtenerArticuloPorCodigo(String codArticulo);
