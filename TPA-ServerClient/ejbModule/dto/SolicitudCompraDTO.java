@@ -7,7 +7,7 @@ public class SolicitudCompraDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	private String codigo; 
+	private String codArticulo; 
 	private List<SolicitudArticuloDTO> solicitudesArticulos;
 	private List<ItemSolicitudCompraDTO> itemSolicitudesCompra;
 	private RecepcionCompraDTO recepcionCompra;
@@ -20,12 +20,12 @@ public class SolicitudCompraDTO implements Serializable{
 
 	
 	
-	public String getCodigo() {
-		return codigo;
+	public String getCodArticulo() {
+		return codArticulo;
 	}
 
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
+	public void setCodArticulo(String codigo) {
+		this.codArticulo = codigo;
 	}
 
 	public List<SolicitudArticuloDTO> getSolicitudesArticulos() {
